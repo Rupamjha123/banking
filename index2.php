@@ -2,10 +2,12 @@
 
 
 <head>
+
+
     <meta charset="UTF-8">
    
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -14,12 +16,17 @@
    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
    <title>BANK</title>
+
+   <style>
+
+
+   </style>
 </head>
 <body>
 
 
 
-<h1 class="h">Canara</h1>
+<h1 class="h">CANARA BANK</h1>
 
 <div class="container bg-dark outer">
    <p>CANARA BANK</p>
@@ -34,10 +41,10 @@
 
 </div>
 <div class="outer2">
-<h1 class="h3">fgvf</h1>
+
 
 <div class="inner">
-
+<h1 class="h3">fgvf</h1>
 </div>
 </div>
 
@@ -51,8 +58,8 @@
 <p>Branch manager no-9867452309</p>
 <p>trustful bank</p>
 
-
 </div>
+
 
 
 
@@ -181,3 +188,6 @@
 </script>
 </body>
 </html>
+
+</body>
+    </html>

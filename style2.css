@@ -1,0 +1,124 @@
+h1{
+
+    background-color:#330033;
+    color:white;
+    text-align:center;
+    }
+
+
+    .outer{
+        width:50%;
+        height:250px;
+         margin-left:25%;
+          margin-top:6%
+      
+          
+      
+         }
+
+
+         .bt1{
+            margin-top:10%;
+           margin-left:25%;
+     }
+      .bt2{
+     
+       margin-top:10%;
+     }
+     
+     .outer p:nth-child(1){
+     
+     font-family: calibri;
+     font-weight:bold;
+     color:white;
+     font-size:30px;
+     text-align:center;
+     
+     }
+     
+     .outer p:nth-child(2){font-family:myriad pro regular ;
+     font-weight:bold;
+     letter-spacing: 1px;
+     color:white;
+     font-size: 20px;
+     line-height:30px;
+     text-align:center;
+     }
+     
+     .outer2{
+     width:100%;
+     height:600px;
+     background:white;
+     
+     
+     }
+     
+     .h3{
+     
+     
+     
+     color: white;
+     margin-top: 0px;
+     height:50px;
+     text-align: center;
+     width:50%;
+     display:flex;
+     margin:4% auto 10px auto;
+     position: relative;
+     justify-content: space-evenly;
+     align-items:center;
+     
+     }
+     
+     .inner{
+     width:100%;
+     height:600px;
+     
+     background-image: url('bank.jpg');
+     background-size: cover;
+     border:2px solid black;
+     margin-top:2%;
+     
+     
+     
+     }
+     
+     .footer{
+     
+      color:white;
+     
+     background-color: #330033;
+     height:300px;
+     width:100%
+     
+     
+     
+     
+     }
+     
+     .p1{font-family:myriad pro regular ;
+     font-weight:bold;
+     letter-spacing: 1px;
+     color:white;
+     font-size: 30px;
+     line-height:30px;
+     text-align:center;
+     }
+     
+     
+     .form-group{
+     color:black;}
+     
+     .modal-footer{
+     background:#330033;
+     
+     }
+     .modal-header{
+     background:#330033;
+     
+     
+     
+     }
+     
+     
+     

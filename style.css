@@ -1,14 +1,18 @@
-.navbar{
-
-background-image: linear-gradient( black,white,#660033,white,black);
-}
-
-   .outer{
+.outer{
   width:50%;
   height:250px;
    margin-left:25%;
     margin-top:6%
 
+    
+
+   }
+
+   h1{
+
+    background-color:#330033;
+    color:white;
+    text-align:center;
   }
   .bt1{
        margin-top:10%;
