@@ -112,6 +112,7 @@ h1{
      
      .modal-footer{
      background:#330033;
+     align-items:center;
      
      }
      .modal-header{
@@ -129,11 +130,12 @@ h1{
 
 
     
-    td{
+    .td{
 
 
         width:50%;
         height:50%;
+        
     }
       
 
@@ -144,10 +146,14 @@ h1{
          
           }
 
-     table{
+     .t1{
          margin-left:10%;
          padding:30%;
     
+     }
+     .td1{
+
+        padding-left:30%;
      }
      .im1:hover{
 
@@ -155,3 +161,25 @@ h1{
         height:300px;
         
      }
+     textarea{
+         width:80%;
+     }
+
+     .modal-footer2 {
+
+       height:50px;
+       background:#330033;
+       
+       
+
+     }
+
+     .modal-footer2 .btn {
+
+      
+       margin-left:35%;
+       margin-top:5px;
+        
+        
+ 
+      }
