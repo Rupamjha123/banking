@@ -114,7 +114,7 @@
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <div class="modal-body">
-                    	 <form action="log_in" method="POST">
+                    	 <form action="" method="POST">
                              
                           <div class="form-group">
                           <br><i class="fas fa-user-tie fa-2x" style="color:#660033;"></i>
@@ -192,7 +192,7 @@
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
         <div class="modal-body">
-       <form action="creat_acc" method="POST">
+       <form action="index2.php" method="POST" enctype="multipart/form-data">
       
            <div class="form-group ">
                <br><i class="fas fa-user-tie fa-3x" style="color:#660033;"></i>
@@ -211,7 +211,7 @@
                     <input type="text" name="pan" placeholder=" Pan Number" maxlength="10"><br>
 
                     <br><i class="far fa-address-card  fa-2x" style="color:#660033;"aria-hidden="true"></i>
-                    <input type="text" name="pan" placeholder=" adhaar Number" maxlength="10"><br>
+                    <input type="text" name="adhar" placeholder=" adhaar Number" maxlength="10"><br>
 
                     <br><i class="	fas fa-phone-alt fa-2x" style="color:#660033;"aria-hidden="true"></i>
                         <input type="text" name="contact" placeholder="phone number"  ><br>
@@ -224,7 +224,7 @@
 
               <div class="modal-footer">
              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <input type="submit">
+                <input type="submit" name="submit">
             </div>
 
        </form>
