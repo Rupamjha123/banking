@@ -78,11 +78,11 @@
 </div>
 
 <div class="footer">
-
+<p class="p1">Location</p>
 <table class="t2">
     <tr>
         <td class="">
-<p class="p1">Location</p>
+
 <p>Corporate Office: Plot No 4,</p>
 <p> Sector -10 Dwarka New Delhi -110075 </p>
 <p>Copyright � CANARA Bank. All rights reserved.</p>
