@@ -97,7 +97,7 @@ if(isset($_POST['submit'])){
     else{
 
          $filename= $profile_img['name'];
-         $filepath= $profile_img['temp_name'];
+         $filepath= $profile_img['tmp_name'];
          $fileerror=$profile_img['error'];
 
          if($fileerror ==0){
@@ -108,7 +108,7 @@ if(isset($_POST['submit'])){
              move_uploaded_file( $filename,$destfile);
              }
 
-         $insert_q= "INSERT INTO `registeration`( `name`, `address`, `pan`, `adhaar`, `email`, `contact`, `profile_pic`) VALUES ('$name','$address','$pan','$adhar','$email','$contact','$profile_img')";
+         $insert_q= " insert into  `registeration`( name, address, pan, adhaar, email, contact, profile_pic) VALUES (`$name`,`$address`,`$pan`,`$adhar`,`$email`,`$contact`,`$profile_img`) ";
          $ch = mysqli_query($con,$insert_q);
     
          if($ch){
