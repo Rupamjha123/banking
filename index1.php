@@ -2,7 +2,7 @@
 
 
 <head>
-
+<?php  include 'index2.php'; ?>
 
     <meta charset="UTF-8">
    
@@ -17,7 +17,7 @@
 
    <title>BANK</title>
   
-  <?php  include 'index2.php'; ?>
+  
   
 </head>
 <body>
@@ -191,40 +191,41 @@
 					<h3 class="text-center text-light">CREATE ACCOUNT</h3>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
-        <div class="modal-body">
-       <form  method="POST" action="index2.php" >
+                    <form  method="POST" action="index2.php" >
       
-           <div class="form-group ">
-               <br><i class="fas fa-user-tie fa-3x" style="color:#660033;"></i>
-                    <input type="text" name="user" placeholder="Full name"><br>
+                    <div class="modal-body">
+                        
+                             <div class="form-group ">
+                             <br><i class="fas fa-user-tie fa-3x" style="color:#660033;"></i>
+                             <input type="text" name="user" placeholder="Full name"><br>
 
 
                  
-                <br><i class="far fa-map-marker-alt fa-3x " style="color:#660033;"aria-hidden="true"></i>
-                      <input type="text" name="address" placeholder="Your Address" ><br>
+                            <br><i class="far fa-map-marker-alt fa-3x " style="color:#660033;"aria-hidden="true"></i>
+                            <input type="text" name="address" placeholder="Your Address" ><br>
 
 
-                       <br><i class="fas fa-envelope-open-text fa-2x " style="color:#660033;"aria-hidden="true"></i>
+                            <br><i class="fas fa-envelope-open-text fa-2x " style="color:#660033;"aria-hidden="true"></i>
                              <input type="email" name="email" placeholder="Your email"></input><br>
 
-                <br><i class="fas fa-address-card fa-2x" style="color:#660033;"aria-hidden="true"></i>
-                    <input type="text" name="pan" placeholder=" Pan Number" maxlength="10"><br>
+                             <br><i class="fas fa-address-card fa-2x" style="color:#660033;"aria-hidden="true"></i>
+                             <input type="text" name="pan" placeholder=" Pan Number" maxlength="10"><br>
 
-                    <br><i class="far fa-address-card  fa-2x" style="color:#660033;"aria-hidden="true"></i>
-                    <input type="text" name="adhar" placeholder=" adhaar Number" maxlength="10"><br>
+                              <br><i class="far fa-address-card  fa-2x" style="color:#660033;"aria-hidden="true"></i>
+                             <input type="text" name="adhar" placeholder=" adhaar Number" maxlength="10"><br>
 
-                    <br><i class="	fas fa-phone-alt fa-2x" style="color:#660033;"aria-hidden="true"></i>
-                        <input type="text" name="contact" placeholder="phone number"  ><br>
+                             <br><i class="	fas fa-phone-alt fa-2x" style="color:#660033;"aria-hidden="true"></i>
+                            <input type="text" name="contact" placeholder="phone number"  ><br>
 
 
-                    <br><i class="far fa-image fa-2x"  style="color:#660033;"></i> <label for="image1">Upload Your Photograph</label>
-               <input type="file" id="image1" name="pic1" placeholder="image" class="input" required><br>
+                         <br><i class="far fa-image fa-2x"  style="color:#660033;"></i> <label for="image1">Upload Your Photograph</label>
+                      <input type="file" id="image1" name="pic1" placeholder="image" class="input" required><br>
       
-       </div>
+                     </div>
 
               <div class="modal-footer">
              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-             <button name="submit">submit</button>
+             <input type="submit" name="insert">submit</button>
             </div>
 
        </form>
@@ -233,7 +234,7 @@
 
     </div>
   </div>
-</div>
+
 
 
 
