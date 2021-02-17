@@ -152,7 +152,10 @@
                     	 <form action="index2.php" method="POST">
                              
                           <div class="form-group">
-                          <br><i class="fa fa-pencil fa-3x" aria-hidden="true" style="color:#660033;"></i>
+                          <br><i class="fas fa-user-tie fa-2x" style="color:#660033;"></i>&nbsp;
+                               <input type="text" name="cust_feedback" placeholder="Your  Name" ><br>
+
+                          <br><i class="fa fa-pencil fa-2x" aria-hidden="true" style="color:#660033;"></i>
                                <textarea type="text" name="feeback" placeholder="feedback" ></textarea>
 
                                
