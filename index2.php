@@ -4,7 +4,7 @@ $username="root";
 $password ="";
 $server ='localhost';
 
-$db='project';
+$db='banking';
 
 $con=mysqli_connect($server,$username,$password,$db);
 
@@ -108,8 +108,8 @@ if(isset($_POST['submit'])){
              move_uploaded_file( $filename,$destfile);
              }
 
-         $insert_q= " insert into  `registeration`( name, address, pan, adhaar, email, contact, profile_pic) VALUES (`$name`,`$address`,`$pan`,`$adhar`,`$email`,`$contact`,`$profile_img`) ";
-         $ch = mysqli_query($con,$insert_q);
+         $insert_qu= " insert into  `registeration`( name, address, pan, adhaar, email, contact, profile_pic) VALUES (`$name`,`$address`,`$pan`,`$adhar`,`$email`,`$contact`,`$profile_img`) ";
+         $ch = mysqli_query($con,$insert_qu);
     
          if($ch){
             ?>
