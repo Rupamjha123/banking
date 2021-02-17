@@ -192,7 +192,7 @@
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
         <div class="modal-body">
-       <form action="index2.php" method="POST" enctype="multipart/form-data">
+       <form  method="POST" action="index2.php" >
       
            <div class="form-group ">
                <br><i class="fas fa-user-tie fa-3x" style="color:#660033;"></i>
@@ -224,7 +224,7 @@
 
               <div class="modal-footer">
              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <input type="submit" name="submit">
+             <button name="submit">submit</button>
             </div>
 
        </form>

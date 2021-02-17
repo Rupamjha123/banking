@@ -23,7 +23,7 @@ if(isset($_POST['submit'])){
     $profile_img=$_FILES['pic1'];
     $contact=$_POST['contact'];
 
-    print_r( $profile_img);
+ 
 
    
     
@@ -102,16 +102,16 @@ if(isset($_POST['submit'])){
 
          if($fileerror ==0){
 
-
+            print_r( $profile_img);
             $destfile='upload/'.$filename;
 
              move_uploaded_file( $filename,$destfile);
              }
 
-         $insert_qu= " insert into  `registeration`( name, address, pan, adhaar, email, contact, profile_pic) VALUES (`$name`,`$address`,`$pan`,`$adhar`,`$email`,`$contact`,`$profile_img`) ";
-         $ch = mysqli_query($con,$insert_qu);
+         $insert_qu= " insert into  `registeration`( `name` , `address` , `pan` , `adhaar` ,` email` , `contact` , `profile_pic`) VALUES (`$name`,`$address`,`$pan`,`$adhar`,`$email`,`$contact`,`$profile_img`) ";
+         $chy = mysqli_query($con,$insert_qu);
     
-         if($ch){
+         if($chy){
             ?>
             <script>
                 alert("data inserted");
