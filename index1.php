@@ -2,7 +2,7 @@
 
 
 <head>
-<?php  include 'index2.php'; ?>
+
 
     <meta charset="UTF-8">
    
@@ -113,8 +113,9 @@
 					<h3 class="text-center text-light">LOGIN</h3>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
+                    <form action="index2.php" method="POST">
                     <div class="modal-body">
-                    	 <form action="" method="POST">
+                   
                              
                           <div class="form-group">
                           <br><i class="fas fa-user-tie fa-2x" style="color:#660033;"></i>
@@ -122,24 +123,26 @@
 
                                 <br><i class="fas fa-lock fa-2x" style="color:#660033;"></i>
                                     <input type="password" name="pass" placeholder="Password"  >
-                    </div>
+                          </div>
 
 
 				<div class="modal-footer2 ">
-       	<input type="submit" class="btn btn-danger">
+       	<input type="submit" class="btn btn-danger" name="submit1">
 
-	   </div>
+	        </div>
                     </form>
-                    </div>
+                   
 
 			</div>
 		</div>
 	</div>
 
 
+
+
 <!-- Modal feedback -->
 
-    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="feedback">
+<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="feedback">
   <div class="modal-dialog modal-sm">
     <div class="modal-content">
 				<div class="modal-header">
@@ -191,7 +194,7 @@
 					<h3 class="text-center text-light">CREATE ACCOUNT</h3>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
-                    <form  method="POST" action="index2.php" >
+                    <form  method="POST" action="" >
       
                     <div class="modal-body">
                         
@@ -218,14 +221,11 @@
                             <input type="text" name="contact" placeholder="phone number"  ><br>
 
 
-                         <br><i class="far fa-image fa-2x"  style="color:#660033;"></i> <label for="image1">Upload Your Photograph</label>
-                      <input type="file" id="image1" name="pic1" placeholder="image" class="input" required><br>
-      
                      </div>
 
               <div class="modal-footer">
              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-             <input type="submit" name="insert">submit</button>
+             <input type="submit" name="submit2">submit</button>
             </div>
 
        </form>
@@ -235,11 +235,13 @@
     </div>
   </div>
 
+</div>
 
 
 
-</body>
-</html>
+
+
+
 
 </body>
     </html>
