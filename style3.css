@@ -1,0 +1,53 @@
+.div1{
+
+    height:500px;
+    width:80%;
+    margin-left:10%;
+    margin-top:5%;
+    background-color: #6666CC;
+}
+
+h1{
+
+    color:white;
+    text-align:center;
+}
+
+
+h3{
+    color:white;
+    text-align:center;
+}
+
+h5{
+    color:white;
+    text-align:center;
+}
+.div2{
+
+    height:370px;
+    width:90%;
+    margin-left:5%;
+    background-color:	#585858;
+   
+}
+h4{
+
+    color:#330033;
+    text-align:center;
+
+}
+button{
+    background-color:crimson;
+    margin-left:10%;
+}
+
+
+a:hover{
+    font-size:30px;
+    
+}
+table{
+    margin-left:25%;
+}
+

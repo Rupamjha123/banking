@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<?php  session_start();
+?>
 
 
 <head>
@@ -124,6 +126,7 @@
                                 <br><i class="fas fa-lock fa-2x" style="color:#660033;"></i>
                                     <input type="password" name="pass" placeholder="Password"  >
                           </div>
+                          </div>
 
 
 				<div class="modal-footer2 ">
@@ -194,7 +197,7 @@
 					<h3 class="text-center text-light">CREATE ACCOUNT</h3>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
-                    <form  method="POST" action="" >
+                    <form  method="POST" action="conn_crete.php" enctype="multipart/form-data" >
       
                     <div class="modal-body">
                         
@@ -219,6 +222,9 @@
 
                              <br><i class="	fas fa-phone-alt fa-2x" style="color:#660033;"aria-hidden="true"></i>
                             <input type="text" name="contact" placeholder="phone number"  ><br>
+                            <br><i class="fas fa-image fa-2x" style="color:#660033;">Upload Your Pic</i>
+                            <br><input type="file" name="pic1">
+                            </div>
 
 
                      </div>
@@ -235,7 +241,7 @@
     </div>
   </div>
 
-</div>
+
 
 
 
