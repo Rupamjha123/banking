@@ -157,6 +157,9 @@ else{
   </div>
 </nav>
 <div class="container1">
+hj
+        <div class="inner-left"></div>
+        <div class="inner-right"></div>
 
 </div>
 
