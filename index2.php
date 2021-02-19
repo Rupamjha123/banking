@@ -63,10 +63,12 @@ if(isset($_POST['submit1']))
 $nam=$_POST['customer'];
 
 $pass1=$_POST['pass'];
-$info ="SELECT * FROM registeration WHERE name='$nam'";
+$info ="SELECT * FROM reg WHERE name='$nam'";
+$query =mysqli_query($con,$info);
 
+$result =mysqli_fetch_array($query);
 
-    if($name == "")
+    if($nam !=$result['name'])
     {
 
         ?>
@@ -84,10 +86,7 @@ $info ="SELECT * FROM registeration WHERE name='$nam'";
         $q="INSERT INTO `reg`(`name` ,`password`) VALUES('$nam','$pass1')";
   
         $c = mysqli_query($con,$q);
-        $info ="SELECT * FROM registeration WHERE name='$nam'";
-
-        $query = mysqli_query($con,$info);
-        $result =mysqli_fetch_array($query);
+       
 
         if($c){
             ?>
@@ -105,8 +104,8 @@ $info ="SELECT * FROM registeration WHERE name='$nam'";
                 <h3><br>Name Should Be Same Which You Entered In Prevous Create Account</h3>
             <?php
 
-                 echo "<br><h5>NAME :<h5>".$result['name'];
-                 echo "<br><h5>PASSWORD : $pass1</h5>";
+                 echo "<br><h5>NAME -><h5>";echo $result['name'];
+                 echo "<br><h5>PASSWORD -> <br>$pass1 </h5>";
 
                  echo "<br><h4>Dont't Forget Your Password !!!</h4>";
 

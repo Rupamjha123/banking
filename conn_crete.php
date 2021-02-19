@@ -63,11 +63,12 @@ form{
     <form action="index2.php" method="POST">
                     
     <br><i class="fas fa-user-tie fa-2x" style="color:#00008B;"></i>
-         <input type="text" name="customer" placeholder="Your  Name" >
+         <input type="text" name="customer" placeholder="Your  Name" required >
 
     <br><i class="fas fa-lock fa-2x" style="color:#00008B;"></i>
-         <input type="password" name="pass" placeholder="Password"  >
-                        
+         <input type="password" name="pass" placeholder="Password" required >
+
+        
 				
     <br><br><input type="submit" class="btn btn-danger" name="submit1">
 
@@ -95,7 +96,8 @@ $con=mysqli_connect($server,$username,$password,$db);
 $database=mysqli_select_db($con,$db);
 $email;
 
-if(isset($_POST['submit2'])){
+if(isset($_POST['submit2']))
+{
    
 
 
@@ -107,131 +109,74 @@ if(isset($_POST['submit2'])){
     $phone=$_POST['contact'];
     $profile_pic=$_FILES['pic1'];
 
+    $filename =$profile_pic['name'];
+    $filepath =$profile_pic['tmp_name'];
+    $fileerror =$profile_pic['error'];
+
     $email_search ="SELECT * FROM registeration Where email ='$ema' ";
     $email_query=mysqli_query($con, $email_search);
-    echo  $email_query;
+   
+    $email_count =mysqli_num_rows($email_query);
 
-    if(empty($username))
+    if($email_count>0)
+    {
+        ?>
+            <script>
+                 alert("email already exist");
+                 location.replace("index1.php");
+            
+            </script>
+         <?php
+
+    }
+    else
     {
 
-        ?>
-        <script>
-            alert("name filed is empty");
 
-        </script>
-        <?php
-    }
-
-
-    
-    else if(empty($addre))
-    {
-
-        ?>
-        <script>
-            alert("address filed is empty");
-
-        </script>
-        <?php
-    }
-
-
-    else if(empty($ema))
-    {
-        
-        ?>
-        <script>
-            alert("email filed is empty");
-
-        </script>
-        <?php
-    }
-
-    else if(empty($pan_no))
-    {
-
-        ?>
-        <script>
-            alert("pan no must be enter");
-
-        </script>
-        <?php
-    }
-
-    else if(empty($adhar))
-    {
-
-        ?>
-        <script>
-            alert("adhare name is necessary");
-
-        </script>
-        <?php
-    }
-
-
-    else if(empty($phone))
-    {
-
-        ?>
-        <script>
-            alert("phone  no is necessary");
-
-        </script>
-        <?php
-    }
-
-    else if( $email_query != "")
+        if($fileerror ==0)
         {
-            ?>
-        <script>
-            alert("email id already exists");
+              $destfile ='upload/'.$filename;
 
-        </script>
-        <?php
-        }
+              move_uploaded_file( $filepath, $destfile);
 
-
-    else{
-
-        $filename =$profile_pic['name'];
-        $filepath =$profile_pic['tmp_name'];
-        $fileerror =$profile_pic['error'];
-
-        if($fileerror ==0){
-            $destfile ='upload/'.$filename;
-
-            move_uploaded_file( $filepath, $destfile);
-
-           
-        }
-
-
-        $que= "INSERT INTO `registeration` (`name`, `address`, `email`, `adhaar`, `pan`, `contact no`, `profile`) VALUES ('$username','$addre','$ema','$adhar','$pan_no','$phone' ,' $destfile')";
+                    
+             $que= "INSERT INTO `registeration` (`name`, `address`, `email`, `adhaar`, `pan`, `contact no`, `profile`) VALUES ('$username','$addre','$ema','$adhar','$pan_no','$phone' ,' $destfile')";
         
-        $check = mysqli_query($con,$que);
-    
-        if($check)
-             {
-                 ?>
-                 <script>
-                   alert("data inserted");
-    
-                 </script>
-                 <?php
-              }
-        else{
-    
-        ?>
-        <script>
-            alert("data not inserted");
-    
-        </script>
-        <?php
-             }
-     }
+             $check = mysqli_query($con,$que);
 
+             if($check)
+             {
+             ?>
+             <script>
+                 alert("data inserted");
+            
+            </script>
+            <?php
+             }
+
+            else{
+                
+            ?>
+                <script>
+                    alert("data not inserted");
+                
+                </script>
+            <?php
+                }
+        
+                
+        }
+
+    }
+
+    
+
+
+        
+       
 }
+
+
 
 else{
 

@@ -115,7 +115,7 @@
 					<h3 class="text-center text-light">LOGIN</h3>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
-                    <form action="index2.php" method="POST">
+                    <form action="profile.php" method="POST">
                     <div class="modal-body">
                    
                              
@@ -123,14 +123,18 @@
                           <br><i class="fas fa-user-tie fa-2x" style="color:#660033;"></i>
                                <input type="text" name="customer" placeholder="Your Registered Name" >
 
+                               <br><i class="fas fa-envelope-open-text fa-2x " style="color:#660033;"aria-hidden="true"></i>
+                             <input type="email" name="email" placeholder="Your email" required></input>
+
+
                                 <br><i class="fas fa-lock fa-2x" style="color:#660033;"></i>
-                                    <input type="password" name="pass" placeholder="Password"  >
+                                    <input type="password" name="pass" placeholder="Password"  required>
                           </div>
                           </div>
 
 
 				<div class="modal-footer2 ">
-       	<input type="submit" class="btn btn-danger" name="submit1">
+       	<input type="submit" class="btn btn-danger" name="submit3">
 
 	        </div>
                     </form>
@@ -203,25 +207,25 @@
                         
                              <div class="form-group ">
                              <br><i class="fas fa-user-tie fa-3x" style="color:#660033;"></i>
-                             <input type="text" name="user" placeholder="Full name"><br>
+                             <input type="text" name="user" placeholder="Full name" required><br>
 
 
                  
                             <br><i class="far fa-map-marker-alt fa-3x " style="color:#660033;"aria-hidden="true"></i>
-                            <input type="text" name="address" placeholder="Your Address" ><br>
+                            <input type="text" name="address" placeholder="Your Address" required><br>
 
 
                             <br><i class="fas fa-envelope-open-text fa-2x " style="color:#660033;"aria-hidden="true"></i>
-                             <input type="email" name="email" placeholder="Your email"></input><br>
+                             <input type="email" name="email" placeholder="Your email" required></input><br>
 
                              <br><i class="fas fa-address-card fa-2x" style="color:#660033;"aria-hidden="true"></i>
-                             <input type="text" name="pan" placeholder=" Pan Number" maxlength="10"><br>
+                             <input type="text" name="pan" placeholder=" Pan Number" maxlength="10" required><br>
 
                               <br><i class="far fa-address-card  fa-2x" style="color:#660033;"aria-hidden="true"></i>
-                             <input type="text" name="adhar" placeholder=" adhaar Number" maxlength="10"><br>
+                             <input type="text" name="adhar" placeholder=" adhaar Number" maxlength="10" required><br>
 
                              <br><i class="	fas fa-phone-alt fa-2x" style="color:#660033;"aria-hidden="true"></i>
-                            <input type="text" name="contact" placeholder="phone number"  ><br>
+                            <input type="text" name="contact" placeholder="phone number"  required><br>
                             <br><i class="fas fa-image fa-2x" style="color:#660033;">Upload Your Pic</i>
                             <br><input type="file" name="pic1">
                             </div>
