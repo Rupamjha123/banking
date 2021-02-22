@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<?php  session_start();
-?>
+
 
 
 <head>
@@ -93,7 +92,15 @@
     .fa-spin:hover {
         animation: fa-stop ;
         
-        
+
+
+    }
+    button{
+
+       background:blue;
+       color:white;
+
+
     }
 
 
@@ -185,6 +192,7 @@ $_SESSION['pan']=$result2['pan'];
                     
                     <script>
                     alert("password is not matching");
+                    location.replace("index1.php");
 
                 </script>
                 <?php
@@ -200,6 +208,7 @@ $_SESSION['pan']=$result2['pan'];
             
                 <script>
                 alert("username is incorrect");
+                location.replace("index1.php");
 
             </script>
             <?php
@@ -208,14 +217,15 @@ $_SESSION['pan']=$result2['pan'];
     else
     {
 
-        ?>
+            ?>
 
-            
-        <script>
-        alert("email is not exists");
+                
+            <script>
+            alert("email is not exists");
+            location.replace("index1.php");
 
-    </script>
-    <?php
+        </script>
+        <?php
 
 
     }
@@ -242,7 +252,9 @@ else{
 <nav class=" bu navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
     <a class="navbar-brand" href="#"><?php echo "<h4>$nam</h4>"; ?></a>
+   
   </div>
+  <a href="logout.php"><button>LOGOUT<button></a>
 </nav>
 
         <div class="inner-left"><img src="<?php echo $_SESSION['pic']; ?>" 
@@ -261,7 +273,7 @@ else{
         </div>
         <div class="inner-right">
 
-            <h1>RUPAM JHA</h1>
+            <h1><?php echo $nam; ?></h1>
 
             
             <p><i class="fas fa-envelope-open-text fa-x " style="color:#660033;"aria-hidden="true">:</i><?php echo $_SESSION['email']; ?></p>
@@ -270,6 +282,7 @@ else{
         </div>
 
 </div>
+
 
 
 

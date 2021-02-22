@@ -63,7 +63,7 @@ if(isset($_POST['submit1']))
 $nam=$_POST['customer'];
 
 $pass1=$_POST['pass'];
-$info ="SELECT * FROM reg WHERE name='$nam'";
+$info ="SELECT * FROM registeration WHERE name='$nam'";
 $query =mysqli_query($con,$info);
 
 $result =mysqli_fetch_array($query);

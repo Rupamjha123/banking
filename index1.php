@@ -1,6 +1,18 @@
-<!DOCTYPE html>
-<?php  session_start();
+<?php
+
+session_start();
+
+
+if(!isset($_SESSION['name'])){
+
+  
+  header('index1.php');
+}
+
+
 ?>
+
+<!DOCTYPE html>
 
 
 <head>
